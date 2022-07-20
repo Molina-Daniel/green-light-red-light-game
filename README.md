@@ -56,6 +56,10 @@ Instructions to run the project in your machine.
 - Input validation
 - Re-routing to Home screen
 
+## Project Notes
+
+- For a better user experience, open the app on a mobile device
+
 ## Lighthouse test
 
 <p align="center">
