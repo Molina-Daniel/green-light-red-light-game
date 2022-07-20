@@ -5,7 +5,6 @@ import Home from "./components/Views/Home/Home";
 import Game from "./components/Views/Game/Game";
 import GameInstructions from "./components/Views/GameRules/GameRules";
 import OfflineAppMessage from "./components/Layout/OfflineAppMessage/OfflineAppMessage";
-import Footer from "./components/Layout/Footer/Footer";
 
 import "./App.css";
 
@@ -22,7 +21,6 @@ function App() {
         <Route path="*" element={<Home />} />
       </Routes>
       {!isOnline && <OfflineAppMessage />}
-      <Footer />
     </Router>
   );
 }
