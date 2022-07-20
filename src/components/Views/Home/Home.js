@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../UI/Button/Button";
 import styles from "./Home.module.css";
+import logo from "../../../assets/images/logo.png";
 
 const Home = () => {
   // states
@@ -50,11 +51,9 @@ const Home = () => {
 
   return (
     <>
-      <img
-        className={styles.logo}
-        src="https://toppng.com/uploads/preview/chicken-png-1155293526266gfbuem3q.png"
-        alt="Pollito Inglés"
-      />
+      <img className={styles.logo} src={logo} alt="Pollito Inglés" />
+      <p className={styles.green}>Green Light</p>
+      <p className={styles.red}>Red Light</p>
       <form onSubmit={submitHandler}>
         <div
           className={`${styles.control} ${

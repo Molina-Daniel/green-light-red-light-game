@@ -1,6 +1,6 @@
 # Green Light, Red Light 🚦
 
-Hi! This App is a version of the "Red Light, Green Light" children's game.
+Hi! This App is a version of the "Red Light, Green Light" children's game. Made with love for BBVA and Sngular :)<br/>
 It has three main views:
 
 - **Home**: Introduce a Player Name and press the Join button.
@@ -14,14 +14,14 @@ Instructions to run the project in your machine.
 
 ## Pre-requisites
 
- - Git
- - Node 10 (or higher)
- - npm 6 (or higher)
+- Git
+- Node 10 (or higher)
+- npm 6 (or higher)
 
 ## Install
 
- - Clone the repository `git clone`
- - Run `npm install` in the root folder
+- Clone the repository `git clone`
+- Run `npm install` in the root folder
 
 ## Running
 

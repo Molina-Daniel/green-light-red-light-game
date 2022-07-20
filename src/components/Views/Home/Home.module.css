@@ -4,8 +4,22 @@
   margin-top: 1rem;
 }
 
+.green {
+  color: #00ff00;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.red {
+  color: #ff0000;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
 .logo {
-  height: 40vmin;
+  height: 10rem;
   pointer-events: none;
 }
 
