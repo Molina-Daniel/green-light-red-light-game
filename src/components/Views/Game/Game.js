@@ -3,6 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Button from "../../UI/Button/Button";
 import styles from "./Game.module.css";
 
+import useSound from "use-sound";
+import music from "../../../assets/sounds/music.mp3";
+
 const Game = () => {
   // states
   const [gameStarted, setGameStarted] = useState(false);
@@ -10,6 +13,12 @@ const Game = () => {
   const [highScore, setHighScore] = useState(0);
   const [redLight, setRedLight] = useState(true);
   const [lastFootClicked, setLastFootClicked] = useState("");
+  // sound states
+  const [playbackRate, setPlaybackRate] = useState(0.75);
+  const [play, { stop }] = useSound(music, {
+    playbackRate,
+    interrupt: true,
+  });
 
   // react-router
   const location = useLocation();
@@ -51,6 +60,24 @@ const Game = () => {
       }
     }
   }, [gameStarted, redLight]);
+
+  // Manage the sound speed multiplier
+  function playbackRateCalc(score) {
+    return Math.floor(score / 10) / 10;
+  }
+
+  // Controls the sound while playing
+  useEffect(() => {
+    const speedMultiplier = playbackRateCalc(currentScore);
+
+    if (redLight) {
+      stop();
+      setPlaybackRate(0.75);
+    } else {
+      setPlaybackRate(playbackRate + speedMultiplier);
+      play();
+    }
+  }, [redLight]);
 
   // Manage the scoring logic when pressing the foot buttons
   const stepsHandler = (foot) => {
