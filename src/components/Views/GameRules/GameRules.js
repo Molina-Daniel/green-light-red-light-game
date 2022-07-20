@@ -10,18 +10,17 @@ const GameRules = () => {
       <h1>Game Rules</h1>
       <p>The rules are very simple:</p>
       <div className={styles.rules}>
-        {/* &nbsp; &#8226;{" "} */}
         <p>
           1. When the light is Green, press the Left Step and Right Step buttons{" "}
           <strong>alternatively</strong>. You gain 1 point for each step.
         </p>
         <p>
-          2. If you press either Left Step or Right Step button while the light
-          is Red, you will lost all you current points.
+          2. If you press either the Left Step or Right Step button while the
+          light is Red, you will lose all your current points.
         </p>
         <p>
-          3. If you press the same button (Left Step or Right Step) repeatedly,
-          you Score will be reduced in 1 point for each press.
+          3. If you repeatedly press the same button (Left Step or Right Step),
+          your score will be reduced to 1 point for each press until you hit 0.
         </p>
         <p>
           **Hint: The Red Light time is fixed and will not change. The Green

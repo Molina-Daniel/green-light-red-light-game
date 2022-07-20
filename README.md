@@ -1,6 +1,9 @@
 # Green Light, Red Light 🚦
 
-Hi! This App is a version of the "Red Light, Green Light" children's game. Made with love for BBVA and Sngular :)<br/>
+Hi! This App is a version of the "Red Light, Green Light" children's game. Made with ❤️ for BBVA and Sngular :)<br/>
+
+![Home view](https://ibb.co/231ff4R)
+
 It has three main views:
 
 - **Home**: Introduce a Player Name and press the Join button.
@@ -30,3 +33,23 @@ Instructions to run the project in your machine.
 ## Tests
 
 - `npm run test` to run all the tests
+
+# Tech Stack
+
+- React
+- react-testing-library
+- Workbox (for PWA settings)
+
+## Features
+
+- PWA
+- Installable
+- Work offline
+- Stores the highest score of each player (join with the same name)
+- Alerts when you are using the App offline
+- Input validation
+- Re-routing to Home screen
+
+## Lighthouse test
+
+![Lighthouse test](https://ibb.co/4Y09LGS)
