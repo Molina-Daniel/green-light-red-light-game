@@ -1,8 +1,15 @@
 # Green Light, Red Light 🚦
 
-Hi! This App is a version of the "Red Light, Green Light" children's game. Made with ❤️ for BBVA and Sngular :)<br/>
+Hi! This App is a version of the "Red Light, Green Light" children's game. Made with ❤️ for BBVA and Sngular :)
 
-![Home view](https://ibb.co/231ff4R)
+<p align="center">
+  <a href="https://green-light-red-light-game.netlify.app/" target="_blank">
+    <img
+        src="https://i.ibb.co/607ffCG/mobile-frame.png"
+        alt="App view"
+        height="400px" />
+  </a>
+</p>
 
 It has three main views:
 
@@ -52,4 +59,11 @@ Instructions to run the project in your machine.
 
 ## Lighthouse test
 
-![Lighthouse test](https://ibb.co/4Y09LGS)
+<p align="center">
+<a href="https://ibb.co/4Y09LGS" target="_blank">
+<img
+    src="https://i.ibb.co/nnKZyv1/lighthouse-test-2022-07-20-155705.png"
+    alt="App view"
+    height="650px" />
+</a>
+</p>
