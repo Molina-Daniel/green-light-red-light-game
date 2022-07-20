@@ -6,8 +6,6 @@ import Game from "./components/Views/Game/Game";
 import GameInstructions from "./components/Views/GameRules/GameRules";
 import OfflineAppMessage from "./components/Layout/OfflineAppMessage/OfflineAppMessage";
 
-import "./App.css";
-
 function App() {
   // Checks if device is online
   const isOnline = useOnlineStatus();

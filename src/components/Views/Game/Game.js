@@ -90,8 +90,8 @@ const Game = () => {
   return (
     <>
       <h1>Let's Play</h1>
-      <p>Player Name: {playerName}</p>
-      <p>High Score: {highScore}</p>
+      <p className={styles.p}>Player Name: {playerName}</p>
+      <p className={styles.p}>Highest Score: {highScore}</p>
       <div>
         <span
           className={`${styles.dot} ${
@@ -99,7 +99,7 @@ const Game = () => {
           }`}
         ></span>
       </div>
-      <p>Score: {currentScore}</p>
+      <p className={styles.p}>Score: {currentScore}</p>
       {!gameStarted && (
         <Button onClick={() => setGameStarted(true)}>Start</Button>
       )}
