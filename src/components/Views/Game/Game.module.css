@@ -15,27 +15,6 @@
   background-color: #0f0;
 }
 
-.button {
-  font: inherit;
-  cursor: pointer;
+.btn {
   display: block;
-  padding: 0.5rem 1rem;
-  /* border: 1px solid #40005d; */
-  background-color: #40005d;
-  color: white;
-  border-radius: 12px;
-  margin: 1rem auto;
-  font-weight: bold;
-}
-
-.step-button {
-  font: inherit;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  /* border: 1px solid #40005d; */
-  background-color: #40005d;
-  color: white;
-  border-radius: 12px;
-  margin: 1rem auto;
-  font-weight: bold;
 }

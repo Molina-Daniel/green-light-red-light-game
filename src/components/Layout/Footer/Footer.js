@@ -7,11 +7,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <p>
-        &copy; {year} | Made with love by &nbsp;
-        <a href="https://github.com/Molina-Daniel" target="_blank" rel="github">
-          Daniel Molina
-        </a>
-        &nbsp; for Sngular and BBVA
+        &copy; {year} | Made with love by Daniel Molina for Sngular and BBVA
       </p>
     </div>
   );

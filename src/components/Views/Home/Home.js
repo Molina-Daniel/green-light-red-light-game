@@ -55,7 +55,6 @@ const Home = () => {
         src="https://toppng.com/uploads/preview/chicken-png-1155293526266gfbuem3q.png"
         alt="Pollito Inglés"
       />
-      {/* <h1>Player Name</h1> */}
       <form onSubmit={submitHandler}>
         <div
           className={`${styles.control} ${
@@ -75,15 +74,11 @@ const Home = () => {
           />
         </div>
 
-        <Button type="submit" className={styles.button} disabled={!formIsValid}>
+        <Button type="submit" disabled={!formIsValid}>
           Join
         </Button>
       </form>
-      <Button
-        type="button"
-        className={styles.button}
-        onClick={() => navigate("/rules")}
-      >
+      <Button type="button" onClick={() => navigate("/rules")}>
         Game Rules
       </Button>
     </>

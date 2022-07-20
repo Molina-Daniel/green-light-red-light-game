@@ -101,27 +101,15 @@ const Game = () => {
       </div>
       <p>Score: {currentScore}</p>
       {!gameStarted && (
-        <Button className={styles.button} onClick={() => setGameStarted(true)}>
-          Start
-        </Button>
+        <Button onClick={() => setGameStarted(true)}>Start</Button>
       )}
       {gameStarted && (
         <>
-          <Button
-            className={styles["step-button"]}
-            onClick={() => stepsHandler("left")}
-          >
-            Left Step
-          </Button>{" "}
-          <Button
-            className={styles["step-button"]}
-            onClick={() => stepsHandler("right")}
-          >
-            Right Step
-          </Button>
+          <Button onClick={() => stepsHandler("left")}>Left Step</Button>{" "}
+          <Button onClick={() => stepsHandler("right")}>Right Step</Button>
         </>
       )}
-      <Button className={styles.button} onClick={() => navigate(-1)}>
+      <Button className={styles.btn} onClick={() => navigate(-1)}>
         Go Back
       </Button>
     </>
