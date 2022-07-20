@@ -1,6 +1,6 @@
 # Green Light, Red Light 🚦
 
-Hi! This App is a version of the "Red Light, Green Light" children's game. Made with ❤️ for BBVA and Sngular :)
+Hi! This App is a version of the "Red Light, Green Light" children's game. Made with ❤️ for BBVA and Sngular :)  
 [Play Now!](https://green-light-red-light-game.netlify.app/)
 
 <p align="center">
