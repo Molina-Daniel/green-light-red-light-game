@@ -1,0 +1,42 @@
+* {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.input {
+  font: inherit;
+  width: 60%;
+  height: 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: start;
+  color: #000000;
+}
+
+.control label {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.control.invalid input {
+  border-color: red;
+  background: #fbdada;
+}

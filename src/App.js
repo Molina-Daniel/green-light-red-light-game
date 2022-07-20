@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useOnlineStatus } from "./customHooks/useOnlineStatus";
+
+import Home from "./components/Views/Home/Home";
+import Game from "./components/Views/Game/Game";
+import GameInstructions from "./components/Views/GameRules/GameRules";
+import OfflineAppMessage from "./components/Layout/OfflineAppMessage/OfflineAppMessage";
+import Footer from "./components/Layout/Footer/Footer";
+
+import "./App.css";
 
 function App() {
+  // Checks if device is online
+  const isOnline = useOnlineStatus();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="game" element={<Game />} />
+        <Route path="rules" element={<GameInstructions />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      {!isOnline && <OfflineAppMessage />}
+      <Footer />
+    </Router>
   );
 }
 
