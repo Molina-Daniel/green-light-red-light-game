@@ -42,7 +42,9 @@ Instructions to run the project in your machine.
 
 # Tech Stack
 
-- React
+- React.js
+- Custom hooks
+- react-router-dom v6
 - react-testing-library
 - Workbox (for PWA settings)
 
