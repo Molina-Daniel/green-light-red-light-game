@@ -46,18 +46,19 @@ const Game = () => {
   // Controls the green light red light game flow
   useEffect(() => {
     const greenLightDuration = greenLightCalc(currentScore);
+    console.log("Green Light duration:", greenLightDuration);
     const redLightDuration = 3000;
 
-    if (gameStarted) {
+    if (gameStarted && redLight === true) {
       setTimeout(() => {
         setRedLight(false);
+        console.log("setRedLight to FALSE in:", redLightDuration);
       }, redLightDuration);
-
-      if (redLight === false) {
-        setTimeout(() => {
-          setRedLight(true);
-        }, greenLightDuration);
-      }
+    } else if (redLight === false) {
+      setTimeout(() => {
+        setRedLight(true);
+        console.log("setRedLight to TRUE in:", greenLightDuration);
+      }, greenLightDuration);
     }
   }, [gameStarted, redLight]);
 
