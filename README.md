@@ -57,6 +57,8 @@ Instructions to run the project in your machine.
 - Alerts when you are using the App offline
 - Input validation
 - Re-routing to Home screen
+- Light effect on the last button pressed during the game (to help you counting 😉)
+- Background music when playing, with speed adjusted to the match score (only works online for now)
 
 ## Project Notes
 
