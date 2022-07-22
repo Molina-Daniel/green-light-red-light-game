@@ -112,6 +112,14 @@ const Game = () => {
     return localStorage.setItem(playerName, JSON.stringify(score));
   }
 
+  // Controls the Go Back (Home) button
+  const goBackHandler = () => {
+    // Stop the sound if playing
+    stop();
+    // Navigate to Home page
+    navigate(-1);
+  };
+
   return (
     <>
       <h1>Let's Play</h1>
@@ -134,7 +142,7 @@ const Game = () => {
           <Button onClick={() => stepsHandler("right")}>Right Step</Button>
         </>
       )}
-      <Button className={styles.btn} onClick={() => navigate(-1)}>
+      <Button className={styles.btn} onClick={goBackHandler}>
         Go Back
       </Button>
     </>
